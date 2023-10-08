@@ -12,8 +12,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Inter', ...defaultTheme.fontFamily.sans],
-      'serif': ["'Lora'", ...defaultTheme.fontFamily.serif]
+      'sans': ['Inter var', ...defaultTheme.fontFamily.sans],
+      'serif': ['Lora var', ...defaultTheme.fontFamily.serif]
     },
   },
   plugins: [
