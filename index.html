@@ -10,133 +10,111 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lora" rel="stylesheet">
   </head>
   <body>
-    <!-- Hero -->
-<div class="h-screen max-h-[100svh] w-full relative">
-  <div class="absolute top-0 right-0 bottom-0 left-0 -z-10 bg-slate-700 bg-center bg-cover" style="background-image: url('https://www.heyday.so/assets/images/heyday-bg.jpg');"></div>
-  <div class="flex flex-col h-full justify-between p-5 md:p-10 text-white antialiased">
-    <div id="logo">
-      <h1 class="text-5xl font-semibold">
-        Heyday
-      </h1>
+    <div class="fixed inset-x-0 top-0">
+  <nav class="container mx-auto px-3 py-3 flex items-center justify-between">
+    <div class="text-xl font-semibold">
+      <a href="https://www.heyday.so" class="hover:text-gray-300">Heyday</a>
     </div>
-    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-      <div class="md:w-3/4">
-        <p class="inline-block text-2xl xl:text-4xl text-balance mb-8 md:mb-0">
-          A new kind of conversational self-care companion—made for people who find life a bit difficult from time to time.
-        </p>
-      </div>
-      <div >
-        <a href="https://app.heyday.so" class="inline-block w-full md:w-auto text-center text-xl md:text-lg xl:text-xl px-8 py-4 border border-white rounded-full hover:bg-white hover:text-black">
-          Get started
-        </a>
-      </div>
+
+    <div class="flex items-center px-4 py-2 space-x-4 bg-white rounded-full">
+      <a href="#" class="text-sm font-medium">Pricing</a>
+      <a href="#" class="text-sm font-medium">Log in</a>
+      <a href="https://app.heyday.so" class="text-sm font-medium">Get started</a>
     </div>
-    </div>
-  </div>
+  </nav>
 </div>
 
-<!-- Not a journal, and not a therapist -->
-<div class="flex flex-row xl:w-3/4 mx-auto px-5 md:px-10 py-20 md:py-52 justify-between place-items-center gap-5 lg:gap-10 relative">
-  <div>
-    <span class="text-lg lg:text-2xl xl:text-3xl font-serif">Journal</span>
+<!-- Hero -->
+<section class="container mx-auto bg-stone-50 rounded-md mt-16 pb-10 px-5">
+  <div class="flex flex-col items-center text-center pt-24 pb-16 md:pt-36 md:pb-24 max-w-xl mx-auto">
+    <h1 class="text-6xl md:text-8xl font-serif mb-10">Every day, <br>a better you.</h1>
+    <h2 class="md:text-lg text-neutral-500 mix-blend-difference text-balance">Heyday is a digital companion that merges journaling with AI-driven therapy to offer personalised guidance through life's ups and downs.</h2>
   </div>
-  <div class="h-px bg-black w-full"></div>
-  <div>
-    <span class="text-lg lg:text-2xl xl:text-3xl font-serif">Therapist</span>
+  <div class="flex flex-col items-center">
+    <img class="md:w-4/5" src="../assets/images/mockup.png" alt="">
   </div>
-  <div class="absolute w-px h-48 md:h-96 top-1/2 right-1/2 md:right-1/3" style="background: linear-gradient(to bottom, transparent 50%, rgb(185, 185, 185) 50%); background-size: 1px 12px;">
-    <div class="absolute w-6 h-6 bg-yellow-400 rounded-full -top-3 -left-3"></div>
-    <div class="absolute w-3 h-3 border border-gray-400 bg-white rounded-full -bottom-1.5 -left-1.5 ml-px"></div>
-  </div>
-</div>
+</section>
 
-<!-- How it works -->
-<div class="flex flex-col md:flex-row px-5 py-20 md:px-10 md:pb-40 md:gap-10">
-  <div class="grid place-items-center p-12 md:p-28 bg-gray-100 md:w-1/2">
-    <img src="https://www.heyday.so/assets/images/mockup.png" width="476px" alt="">
-  </div>
-  <div class="flex flex-col md:w-1/2 pt-16 md:pt-28 max-w-xl text-balance">
-    <p class="text-lg text-gray-500 mb-2">Not a journal, not a therapist</p>
-    <p class="text-4xl font-serif mb-10">Heyday is a space to explore and understand yourself</p>
-    <p class="text-xl mb-10 text-gray-700">Explore everyday moments, thoughts, feelings, and reactions. Heyday is your companion towards mental well-being.</p>
-    <hr class="mb-10">
-    <p class="text-xl mb-3">Personal</p>
-    <p class="text-lg mb-10 text-gray-500">Heyday provides responses that are intricately personalised to align with your unique life circumstances, aspirations, and individual goals.</p>
-    <p class="text-xl mb-3">Accessible</p>
-    <p class="text-lg mb-10 text-gray-500">Experience immediate support at your fingertips. Heyday is available at any moment, ensuring you have timely assistance for every life event that requires thoughtful processing.</p>
-    <p class="text-xl mb-3">Private</p>
-    <p class="text-lg mb-10 text-gray-500">Your messages are stored using AES-256 GCM encryption and sent via secure HTTPS. We can't read your stored data, however unencrypted data is processed by OpenAI at each message exchange.</p>
-  </div>
-</div>
-
-<!-- Why Heyday -->
-<div class="px-5 py-20 md:px-10 md:py-40">
-  <span class="text-gray-600 md:text-xl mr-10 md:mr-28 align-top">Why Heyday</span>
-  <span class="font-serif text-2xl md:text-4xl">
-    The global mental health landscape has worsened significantly, exacerbated by the COVID-19 pandemic. Cases of depression have spiked by 28%, while anxiety disorders have seen a roughly 25% uptick, collectively affecting an estimated 620 million people worldwide. Disturbingly, nearly half of those diagnosed with either condition go untreated. Heyday aims to provide timely, accessible, and cost-effective mental health support, before needing expert care.</span>
-</div>
-
-<!-- Methods -->
-<div class="px-5 md:px-10 pt-20 md:pt-40">
-  <h2 class="font-serif text-4xl mb-10">Proven methods</h2>
-</div>
-<div class="pl-5 md:pl-10 pb-20 md:pb-40 pr-10 flex flex-row flex-nowrap gap-3 w-full overflow-x-scroll no-scrollbar">
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Metacognitive <br>Therapy</span>
+<section class="container mx-auto">
+  <div class="flex flex-col md:flex-row py-24 md:py-36 px-5 md:w-4/5 mx-auto">
+    <div class="text-center md:text-left md:w-3/5 md:pt-16">
+      <h2 class="text-5xl md:text-6xl font-serif mb-10 md:-mr-32">You are not alone</h2>
+      <p class="text-lg text-neutral-500 mix-blend-difference text-balance mb-2">Life can be difficult — many of us feel that every now and then. In fact, around 20% of people live with diagnosable mental health issues and close to half of all people will at some point in their life do so.</p>
+      <p class="text-lg text-neutral-500 mix-blend-difference text-balance mb-10 md:mb-5">To make matters worse, only around half of those people will receive the support and care they need.</p>
     </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Solution-Focused <br>Brief Therapy</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Cognitive Behavioral <br>Therapy</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Acceptance and <br>Commitment Therapy</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Motivational <br>Interviewing</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Mindfulness</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Narrative <br>Therapy</span>
-    </div>
-  
-    <div class="shrink-0 w-72 h-48 p-6 bg-slate-100 rounded-xl flex flex-col justify-end">
-      <span class="text-xl">Positive <br>Psychology</span>
-    </div>
-  
-</div>
-
-<!-- Last CTA -->
-<div class="w-full overflow-x-clip mt-20 md:mt-40 mb-20 md:mb-32">
-  <div class="flex flex-col w-3/4 md:w-72 mx-auto">
-    <div id="sphere-container" class="animate-spin aspect-square w-full" style="animation-duration: 60s;">
-      <div id="sphere-blurred" class="animate-spin" style="animation-duration: 30s;"></div>
-      <div id="sphere-sharp" class="animate-spin" style="animation-duration: 25s;"></div>
+    <div class="grow flex justify-end">
+      <img class="md:w-4/5" src="../assets/images/two-people-talking.png" alt="">
     </div>
   </div>
-</div>
-<div class="flex flex-col px-5 md:px-10 items-center mb-20 md:mb-40">
-  <h2 class="w-fit text-2xl md:text-3xl font-serif mb-10 text-center">Start your mental self-care journey with Heyday</h2>
-  <a href="https://app.heyday.so" class="text-lg md:text-xl px-8 md:px-10 py-3 md:py-5 border border-black rounded-full hover:bg-white hover:text-black">
-    Get started
-  </a>
-</div>
+</section>
+
+<section class="container mx-auto bg-amber-50 rounded-md px-5 mt-10 pb-10">
+  <div class="flex flex-col items-center text-center py-24 max-w-2xl mx-auto">
+    <h2 class="text-5xl md:text-6xl font-serif mb-10">Just you, taking steps at your own pace, with a little help from us.</h2>
+    <p class="text-lg text-neutral-500 mix-blend-difference">We’re not here to give you a magic cure, because there isn’t one. But what we do offer is a friendly ear and some smart insights. Heyday’s your space to talk, rant, ponder, or just reflect. Our interactive sessions are like talking to a friend who really gets you – plus a bit of AI smarts to offer personalized guidance.</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <img class="md:w-4/5" src="../assets/images/mockup.png" alt="">
+  </div>
+</section>
+
+<section class="container mx-auto px-5">
+  <div class="text-center md:text-left flex flex-col md:flex-row py-24 md:py-36 md:w-4/5 mx-auto">
+    <div class="grow flex justify-end">
+      <img class="md:w-4/5" src="../assets/images/woman-journaling.png" alt="">
+    </div>
+    <div class="md:w-3/5 pt-16">
+      <h2 class="text-5xl md:text-6xl font-serif mb-10">Private.</h2>
+      <p class="text-lg text-neutral-500 mix-blend-difference text-balance">Your messages are stored encrypted using a AES-256 bit algorithm and sent via secure HTTPS. We can't even read your stored data if we wanted to.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container mx-auto bg-stone-50 rounded-md mt-10 pb-10 px-5">
+  <div class="flex flex-col items-center text-center pt-24 max-w-2xl mx-auto">
+    <h2 class="text-5xl md:text-6xl font-serif mb-10">FAQ</h2>
+  </div>
+  <div class="flex flex-col items-center pb-24">
+    <div class="md:w-1/2 mx-auto">
+      <h3 class="font-medium mb-1">What is Heyday?</h3>
+      <p class="mb-4">Heyday is a digital platform that combines the reflective practice of journaling with AI-driven therapy. It's designed to provide personalized support and insights, helping you understand and navigate your mental well-being.</p>
+      <h3 class="font-medium mb-1">How does the AI therapy work?</h3>
+      <p class="mb-4">Our AI therapy uses advanced algorithms to analyze your journal entries and provide interactive feedback. It understands your emotions, patterns, and offers insights and suggestions based on your individual needs.</p>
+      <h3 class="font-medium mb-1">Is my information private and secure?</h3>
+      <p class="mb-4">Absolutely. Privacy and security are our top priorities. Your journal entries and any data shared with Heyday are encrypted and kept completely confidential. We are committed to ensuring your personal space remains private.</p>
+      <h3 class="font-medium mb-1">How can Heyday help me?</h3>
+      <p class="mb-4">Heyday helps by providing a space for reflection, offering insights into your thoughts and feelings, and suggesting actionable steps towards mental well-being. It's like having a personal therapist who's available whenever you need to talk.</p>
+      <h3 class="font-medium mb-1">Do I need any experience with journaling or therapy?</h3>
+      <p class="mb-4">Not at all. Heyday is designed for everyone, regardless of your experience with journaling or therapy. Our platform is user-friendly and guides you through the process.</p>
+      <h3 class="font-medium mb-1">Is Heyday a replacement for professional therapy?</h3>
+      <p class="mb-4">While Heyday offers therapeutic insights and support, it should not be considered a replacement for professional therapy. If you're experiencing severe mental health issues, we recommend seeking help from a licensed professional.</p>
+      <h3 class="font-medium mb-1">How often should I use Heyday?</h3>
+      <p class="mb-4">You can use Heyday as often as you like. Some users find daily entries helpful, while others prefer using it as and when they need to. It's flexible to suit your personal preference and lifestyle.</p>
+      <!-- <h3 class="font-medium mb-1">How do I get started with Heyday?</h3>
+      <p class="mb-4">Getting started is easy! Just sign up, and you'll be guided through the initial setup. You can start journaling and receiving insights from your very first entry.</p>
+      <h3 class="font-medium mb-1">Is there a cost to use Heyday?</h3>
+      <p class="mb-4">Heyday offers various subscription plans to suit different needs. You can start with a free trial to explore the platform and then choose a plan that best fits your needs.</p>
+      <h3 class="font-medium mb-1">Where can I get more information or support?</h3>
+      <p class="mb-4">For more information or support, please visit our [Support Page] or contact our customer service team. We're here to help!</p> -->
+    </div>
+  </div>
+</section>
+
+<section class="container mx-auto mt-10 pb-10">
+  <div class="flex flex-col items-center text-center py-24 max-w-2xl mx-auto">
+    <img class="w-2/3 mb-20 md:mb-10" src="../assets/images/woman-meditating.png" alt="">
+    <h2 class="text-5xl md:text-6xl font-serif mb-10">Get started today</h2>
+    <p class="text-lg text-neutral-500 mix-blend-difference">Join us on a journey of self-discovery and mental well-being. With Heyday, every day is an opportunity to understand yourself better.</p>
+    <div class="flex flex-col items-center pt-10">
+      <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white py-3 px-5 rounded-full">Sign up</a>
+  </div>
+</section>
 
 <!-- Footer -->
-<div class="flex flex-col md:flex-row items-center md:items-start md:justify-between px-5 md:px-10 pt-20 md:pt-40 pb-5 text-sm text-gray-500 gap-5">
+<div class="flex flex-col md:flex-row items-center md:items-start md:justify-between px-5 md:px-10 pt-20 md:pt-40 pb-5 font-light text-sm text-gray-500 gap-5">
   <div class="text-center md:text-left">© Copyright 2023 Nowadays Technologies ApS</div>
   <div class="flex flex-row space-x-5 order-first md:order-none">
     <a href="https://www.heyday.so/pricing" class="hover:underline">Pricing</a>
