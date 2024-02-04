@@ -44,42 +44,66 @@
   }
 }
 
-#sphere-container {
-    position: relative;
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
-#sphere-blurred {
-    position: absolute;
-    border-radius: 50%;
-    width: 100%;
-    height: 95%;
-    filter: blur(25px);
-    background: radial-gradient(circle at 65% 100%, #ffd900 0%, #FFA500 50%, #FFA500 75%, #ff7b00 80%,#FFA500 83%, transparent 100%);
-    top: 0;
-    left: 0;
-    z-index: 2;
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-Italic.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
 }
 
-#sphere-sharp {
-    position: absolute;
-    border-radius: 50%;
-    width: 80%;
-    height: 80%;
-    background: radial-gradient(circle at 65% 100%, #ffd900 0%, #FFA500 50%, transparent 100%);
-    top: 15%;
-    left: 15%;
-    z-index: 1;
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
-#sphere-container::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('path_to_noise_texture.png');
-    pointer-events: none;
-    opacity: 0.2;
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-MediumItalic.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-SemiBold.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-SemiBoldItalic.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IvarDisplay';
+  src: url('../fonts/ivar_display/IvarDisplay-BoldItalic.woff2') format('woff2'),
+       url('../fonts/ivar_display/IvarDisplay-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
 }
