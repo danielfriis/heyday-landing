@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Inter var', ...defaultTheme.fontFamily.sans],
-        'serif': ["'IvarDisplay'", ...defaultTheme.fontFamily.serif]
+        'serif': ["'IvarHeadline'", ...defaultTheme.fontFamily.serif]
       },
       colors: {
         'brand': {
