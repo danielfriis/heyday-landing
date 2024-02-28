@@ -58,7 +58,7 @@ title: "Heyday"
 <section class="flex flex-col overflow-x-clip items-center text-center my-36">
   <div class="w-full max-w-xl flex flex-col gap-1 px-3">
     {% for entry in site.data.faqs %}
-      <button class="group closed accordion-header rounded-[60px] flex flex-col gap-3 items-center px-16 md:px-8 py-8 md:py-12 bg-neutral-100 transition transform ease-in-out delay-150 ">
+      <button class="group closed accordion-header rounded-[60px] flex flex-col gap-8 md:gap-12 items-center px-16 md:px-8 py-8 md:py-12 bg-neutral-100 transition transform ease-in-out delay-150 ">
         <div class="w-full flex justify-center relative">
           <h3 class="font-medium text-pretty">{{ entry.question }}</h3>
           <span class="absolute -right-8 md:right-0 inset-y-0 flex items-center">
@@ -71,7 +71,7 @@ title: "Heyday"
     {% endfor %}
   </div>
 </section>
-<section class="flex flex-col overflow-x-clip items-center text-center mt-36 mb-10">
+<section class="flex flex-col overflow-x-clip items-center text-center mt-48 mb-10">
   <h2 class="text-6xl md:text-8xl font-serif mb-10">Every day,<br> a better you.</h2>
 </section>
 <section class="w-full flex flex-col items-center text-center sticky bottom-10 mb-36">
