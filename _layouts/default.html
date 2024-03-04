@@ -15,11 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 
     <meta property="og:site_name" content="{{ site.title | escape }}">
-    <meta property="og:title" content="{{ page.title | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:description" content="A new kind of conversational self-care platform.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ 'assets/images/heyday-share.png' | absolute_url }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="A new kind of conversational self-care platform.">
+    <meta property="og:image" content="{{ 'assets/images/heyday-share.jpg' | absolute_url }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="{{ site.domain }}">
+    <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="A new kind of conversational self-care platform.">
+    <meta name="twitter:image" content="{{ 'assets/images/heyday-share.jpg' | absolute_url }}">
 
     <script defer data-domain="heyday.so" src="https://plausible.io/js/script.js"></script>
   </head>
